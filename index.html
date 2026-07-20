@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Janawaz</title>
+<title>Janawaz 2.0</title>
 
 <style>
 *{
@@ -14,87 +15,86 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#f2f2f2;
+background:#f5f7fa;
+color:#333;
 }
 
 header{
-background:#008000;
-color:white;
-padding:20px;
-text-align:center;
+background:linear-gradient(135deg,#0057B8,#00A651);
+color:#fff;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
 }
 
-nav{
-background:white;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-padding:12px;
-box-shadow:0 2px 5px rgba(0,0,0,.2);
+.logo{
+font-size:30px;
+font-weight:bold;
 }
 
 nav a{
 text-decoration:none;
-margin:10px;
-color:#008000;
+color:white;
+margin:0 12px;
 font-weight:bold;
 }
 
+nav a:hover{
+color:#FFD54F;
+}
+
+.btn{
+background:#fff;
+color:#0057B8;
+padding:10px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin-left:10px;
+}
+
 .hero{
-padding:60px 20px;
 text-align:center;
-background:white;
+padding:100px 20px;
+background:linear-gradient(rgba(0,87,184,.75),rgba(0,166,81,.75));
+color:white;
 }
 
 .hero h1{
-font-size:38px;
-color:#008000;
+font-size:50px;
+margin-bottom:15px;
 }
 
 .hero p{
-margin-top:15px;
-font-size:18px;
-color:#555;
+font-size:20px;
+max-width:700px;
+margin:auto;
+line-height:1.7;
 }
 
-.button{
+.hero-buttons{
+margin-top:35px;
+}
+
+.hero-buttons a{
 display:inline-block;
-margin-top:25px;
-padding:12px 25px;
-background:#008000;
-color:white;
+margin:10px;
+padding:14px 28px;
+border-radius:40px;
 text-decoration:none;
-border-radius:6px;
+font-weight:bold;
 }
 
-.section{
-max-width:1000px;
-margin:30px auto;
-background:white;
-padding:25px;
-border-radius:10px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:20px;
-}
-
-.card{
-background:#f8f8f8;
-padding:20px;
-border-radius:8px;
-text-align:center;
-}
-
-footer{
-background:#111;
+.report{
+background:#FF9800;
 color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
+}
+
+.volunteer{
+background:white;
+color:#0057B8;
 }
 </style>
 </head>
@@ -102,82 +102,43 @@ margin-top:30px;
 <body>
 
 <header>
-<h1>JANAWAZ</h1>
-<p>Voice of the People</p>
-</header>
+
+<div class="logo">JANAWAZ</div>
 
 <nav>
 <a href="#">Home</a>
-<a href="#">About</a>
+<a href="#">Report</a>
+<a href="#">Track</a>
 <a href="#">Volunteer</a>
-<a href="#">Issues</a>
-<a href="#">News</a>
+<a href="#">Updates</a>
 <a href="#">Contact</a>
 </nav>
 
+<div>
+<a class="btn" href="#">Login</a>
+<a class="btn" href="#">Sign Up</a>
+</div>
+
+</header>
+
 <section class="hero">
-<h1>Welcome to Janawaz</h1>
-<p>Digital Platform for Public Voice and Social Change.</p>
 
-<a class="button" href="#">Become Volunteer</a>
-</section>
+<h1>Your Voice, Our Mission</h1>
 
-<section class="section">
-<h2>About Janawaz</h2>
-
-<p style="margin-top:15px;">
-Janawaz is a digital platform where citizens can raise public issues,
-join social campaigns and work together to build a better society.
+<p>
+Raise your voice. Report public issues, join as a volunteer,
+and help build a transparent and accountable society.
 </p>
 
-</section>
+<div class="hero-buttons">
 
-<section class="section">
+<a class="report" href="#">Report Issue</a>
 
-<h2>Our Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Public Issues</h3>
-<p>Report local problems.</p>
-</div>
-
-<div class="card">
-<h3>Volunteer</h3>
-<p>Join our mission.</p>
-</div>
-
-<div class="card">
-<h3>News</h3>
-<p>Latest updates.</p>
-</div>
-
-<div class="card">
-<h3>Campaign</h3>
-<p>Support social movements.</p>
-</div>
+<a class="volunteer" href="#">Join Volunteer</a>
 
 </div>
 
 </section>
-
-<section class="section">
-
-<h2>Our Mission</h2>
-
-<p style="margin-top:15px;">
-Empowering every citizen through technology,
-transparency and community participation.
-</p>
-
-</section>
-
-<footer>
-
-© 2026 Janawaz | Designed by Akhaya Pradhan
-
-</footer>
 
 </body>
 </html>
