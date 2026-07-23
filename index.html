@@ -187,6 +187,25 @@ and help build a transparent and accountable society.
 </div>
 
 </section>
+<!-- Firebase SDK -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyDcvKESFl2_zZZ_8yN2co5IIZeYCp6wnpQ",
+  authDomain: "janawaz-2e60a.firebaseapp.com",
+  projectId: "janawaz-2e60a",
+  storageBucket: "janawaz-2e60a.firebasestorage.app",
+  messagingSenderId: "5746055252",
+  appId: "1:5746055252:web:534b67633c3732a837f5c1",
+  measurementId: "G-JRN5N2STPM"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+console.log("Firebase Connected Successfully!");
+</script>
 </body>
 </html>
