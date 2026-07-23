@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Janawaz 2.0</title>
-<link rel="stylesheet" href="style.css">
+
 <style>
 *{
 margin:0;
@@ -20,12 +19,12 @@ color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#0057B8,#00A651);
-color:#fff;
-padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:18px 8%;
+background:linear-gradient(135deg,#0057B8,#00A651);
+color:#fff;
 flex-wrap:wrap;
 }
 
@@ -35,8 +34,8 @@ font-weight:bold;
 }
 
 nav a{
+color:#fff;
 text-decoration:none;
-color:white;
 margin:0 12px;
 font-weight:bold;
 }
@@ -59,7 +58,7 @@ margin-left:10px;
 text-align:center;
 padding:100px 20px;
 background:linear-gradient(rgba(0,87,184,.75),rgba(0,166,81,.75));
-color:white;
+color:#fff;
 }
 
 .hero h1{
@@ -89,17 +88,85 @@ font-weight:bold;
 
 .report{
 background:#FF9800;
-color:white;
+color:#fff;
 }
 
 .volunteer{
-background:white;
+background:#fff;
 color:#0057B8;
 }
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:50px 8%;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:50px 8%;
+background:#0057B8;
+color:#fff;
+text-align:center;
+}
+
+footer{
+background:#222;
+color:#fff;
+text-align:center;
+padding:20px;
+}
 </style>
+
 </head>
 
-<<section class="cards">
+<body>
+
+<header>
+<div class="logo">JANAWAZ</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Report</a>
+<a href="#">Track</a>
+<a href="#">Volunteer</a>
+<a href="#">Contact</a>
+</nav>
+
+<div>
+<a class="btn" href="#">Login</a>
+<a class="btn" href="#">Sign Up</a>
+</div>
+
+</header>
+<section class="hero">
+
+<h1>Your Voice, Our Mission</h1>
+
+<p>
+Raise your voice. Report public issues, join volunteers,
+and help build a transparent and accountable society.
+</p>
+
+<div class="hero-buttons">
+<a class="report" href="report.html">📢 Report Issue</a>
+<a class="volunteer" href="volunteer.html">👥 Join Volunteer</a>
+</div>
+
+</section>
+
+<section class="cards">
 
 <div class="card">
 <h3>📢 Report Issue</h3>
@@ -119,9 +186,7 @@ color:#0057B8;
 <a class="btn" href="track.html">Track</a>
 </div>
 
-</section>
-
-<section class="stats">
+</section><section class="stats">
 
 <div class="stat">
 <h2>10K+</h2>
@@ -147,65 +212,4 @@ color:#0057B8;
 
 <footer>
 <p>© 2026 Janawaz | Your Voice, Our Mission</p>
-</footer>>
-
-<header>
-
-<div class="logo">JANAWAZ</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Report</a>
-<a href="#">Track</a>
-<a href="#">Volunteer</a>
-<a href="#">Updates</a>
-<a href="#">Contact</a>
-</nav>
-
-<div>
-<a class="btn" href="#">Login</a>
-<a class="btn" href="#">Sign Up</a>
-</div>
-
-</header>
-
-<section class="hero">
-
-<h1>Your Voice, Our Mission</h1>
-
-<p>
-Raise your voice. Report public issues, join as a volunteer,
-and help build a transparent and accountable society.
-</p>
-
-<div class="hero-buttons">
-
-<a class="report" href="#">Report Issue</a>
-
-<a class="volunteer" href="#">Join Volunteer</a>
-
-</div>
-
-</section>
-<!-- Firebase SDK -->
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDcvKESFl2_zZZ_8yN2co5IIZeYCp6wnpQ",
-  authDomain: "janawaz-2e60a.firebaseapp.com",
-  projectId: "janawaz-2e60a",
-  storageBucket: "janawaz-2e60a.firebasestorage.app",
-  messagingSenderId: "5746055252",
-  appId: "1:5746055252:web:534b67633c3732a837f5c1",
-  measurementId: "G-JRN5N2STPM"
-};
-
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-console.log("Firebase Connected Successfully!");
-</script>
-</body>
-</html>
+</footer>
