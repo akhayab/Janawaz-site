@@ -170,3 +170,8 @@ font-size:17px;
 }
 
 }
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
