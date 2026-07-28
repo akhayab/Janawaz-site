@@ -170,3 +170,31 @@ font-size:17px;
 }
 
 }
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero{
+    position:relative;
+}
+
+.hero h1,
+.hero p,
+.hero button{
+    position:relative;
+    z-index:2;
+}
+
+.hero button{
+    background:#ff9800;
+    color:#fff;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    text-decoration:none;
+}
