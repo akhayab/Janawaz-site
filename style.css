@@ -215,3 +215,21 @@ font-size:17px;
     background:#f57c00;
     transform:translateY(-3px);
 }
+@media (max-width:768px){
+
+#navMenu{
+display:none;
+flex-direction:column;
+width:100%;
+background:#0d47a1;
+padding:15px;
+}
+
+.menu-toggle{
+display:block;
+font-size:32px;
+color:white;
+cursor:pointer;
+}
+
+}
