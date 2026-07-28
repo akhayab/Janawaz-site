@@ -63,3 +63,30 @@ topBtn.onclick = () => {
         behavior: "smooth"
     });
 };
+function counter(id,end){
+    let count=0;
+    let speed=Math.ceil(end/100);
+
+    let interval=setInterval(()=>{
+        count+=speed;
+
+        if(count>=end){
+            count=end;
+            clearInterval(interval);
+        }
+
+        document.getElementById(id).innerText=count+"+";
+    },20);
+}
+
+window.onload=function(){
+
+counter("volunteers",500);
+
+counter("issues",120);
+
+counter("districts",30);
+
+counter("support",5000);
+
+};
