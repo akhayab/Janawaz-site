@@ -233,3 +233,29 @@ cursor:pointer;
 }
 
 }
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:50px 20px;
+    background:#0d47a1;
+}
+
+.stat-box{
+    background:#fff;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.stat-box h2{
+    font-size:40px;
+    color:#0d47a1;
+}
+
+.stat-box p{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:bold;
+}
