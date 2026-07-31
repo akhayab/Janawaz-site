@@ -217,7 +217,7 @@ const db = getFirestore(app);
 
 window.registerVolunteer = async function () {
   const name = document.getElementById("name").value;
-  const phone = document.getElementById("phone").value;
+  const phone = document.getElementById("mobile").value;
 
   if (!name || !phone) {
     alert("Please fill all fields");
@@ -233,7 +233,7 @@ window.registerVolunteer = async function () {
 
     alert("Volunteer Registered Successfully!");
     document.getElementById("name").value = "";
-    document.getElementById("phone").value = "";
+    document.getElementById("mobile").value = "";
   } catch (e) {
     alert("Error: " + e.message);
   }
