@@ -239,16 +239,28 @@ window.registerVolunteer = async function () {
   }
 };
 </script>
-  ...
 <script src="script.js"></script>
 
 <script type="module">
-<script src="script.js"></script>
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js";
 
-<script type="module">
-  // ଏଠାରେ ତୁମ Firebase ସମ୍ପୂର୍ଣ୍ଣ code paste କର
+const firebaseConfig = {
+  apiKey: "AIzaSyDcvKESFl2_zZZ_8yN2co5IIZeYCp6wnpQ",
+  authDomain: "janawaz-2e60a.firebaseapp.com",
+  projectId: "janawaz-2e60a",
+  storageBucket: "janawaz-2e60a.firebasestorage.app",
+  messagingSenderId: "5746055252",
+  appId: "1:5746055252:web:534b67633c3732a837f5c1",
+  measurementId: "G-JRN5N2STPM"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.db = db;
 </script>
-
+  
 </body>
 </html>
-  // Firebase code
+
